@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fashion Trends</title>
+
+    <style>
+    .hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  background: #000000;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  padding: 50px 20px;
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  max-width: none;
+  width: calc(100% + 20px);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(-10px,0,0);
+  transform: translate3d(-10px,0,0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.hovereffect:hover img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  overflow: hidden;
+  padding: 0.5em 0;
+  background-color: transparent;
+}
+
+.hovereffect h2:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  content: '';
+  -webkit-transition: -webkit-transform 0.35s;
+  transition: transform 0.35s;
+  -webkit-transform: translate3d(-100%,0,0);
+  transform: translate3d(-100%,0,0);
+}
+
+.hovereffect:hover h2:after {
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+
+.hovereffect a, .hovereffect p {
+  color: #FFF;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+  -webkit-transform: translate3d(100%,0,0);
+  transform: translate3d(100%,0,0);
+}
+
+.hovereffect:hover a, .hovereffect:hover p {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+div.img {
+    border: 1px solid #ccc;
+}
+
+div.img:hover {
+    border: 1px solid #777;
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+body {
+
+    padding:0;
+    text-align:center;
+     background-color:#000000;
+
+}
+h1
+{
+	color:#ffffff;
+	font-family:Adobe Caslan Pro;
+	 font-style: italic;
+	 font-size: 100px;
+}
+</style>
+</head>
+
+<body>
+<h1>Popular Fashion Analytics</h1>
+<center>
+<div style="margin-left:100px ">
+<div class="responsive" style="width:280px;margin:0 auto position:relative">
+  <div class="img">
+   <div class="hovereffect">
+<a href="main.html?a=bag">
+    <img border="0" alt="Bag" src="/home/saumya/InnovAccer/FashionAnalytics/templates/Images/bags.jpg" width="450" height="200" class="img-responsive" align="centre" >
+</a>
+</div>
+</div>
+</div>
+
+<div class="responsive" style="width:280px;margin:0 auto">
+  <div class="img">
+   <div class="hovereffect">
+<a href="main.html?a=belt">
+    <img border="0" alt="belt" src="Images/belt.jpg" width="600" height="400" class="img-responsive" align="centre">
+</a>
+</div>
+</div>
+</div>
+
+<div class="responsive" style="width:280px;margin:0 auto">
+  <div class="img">
+   <div class="hovereffect">
+<a href="main.html?a=sunglasses">
+    <img border="0" alt="sunglasses" src="/home/saumya/InnovAccer/FashionAnalytics/templates/Images/sunglasses.jpg" width="600" height="400" class="img-responsive" align="centre">
+</a>
+</div>
+</div>
+</div>
+
+<div class="responsive" style="width:289px;margin:0 auto">
+  <div class="img">
+   <div class="hovereffect">
+<a href="main.html?a=lipstick">
+    <img border="0" alt="lipstick" src="/home/saumya/InnovAccer/FashionAnalytics/templates/Images/lipstick.jpg" width="600" height="400" class="img-responsive" align="centre">
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</center>
